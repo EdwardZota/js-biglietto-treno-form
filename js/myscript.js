@@ -22,15 +22,13 @@ domButton.addEventListener('click',
 
         console.log(age.value);
 
-        const totalPrice = priceKm * km.value;
+        let totalPrice = priceKm * km.value;
 
-        if (document.getElementById('age').value == "minorenne") {
+        if  (age.value == "minorenne"){
             totalPrice -= totalPrice / 100 * 20;
-        }else if (document.getElementById('age').value == "over65") {
+        }else if (age.value == "over65") {
             totalPrice = totalPrice - (totalPrice * 0.4);
         }
-
-
 
         console.log(totalPrice);
 
