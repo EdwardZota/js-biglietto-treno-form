@@ -10,16 +10,45 @@
 <body>
 
     <main>
-        <input type="text" id="name_surname">
-        <input type="number" id="km" name="km">
+        <h1 class="text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <div class="container">
+            <form>
+                <div>
+                    <label for="name_surname">Nome e Cognome</label>
+                    <input type="text" id="name_surname">
+                </div>
+                <div>
+                    <label for="km">Km da percorrere</label>
+                    <input type="number" id="km" name="km">
+                </div>
+                <div>
+                    <label for="age">Fascia d-età</label>
+                    <select id="age">
+                        <option value="minorenne" id="minorenne">minorenne</option>
+                        <option value="maggiorenne" id="maggiorenne">maggiorenne</option>
+                        <option value="over65" id="over65">over 65</option>
+                    </select>
+                    
+                </div>
 
-        <select id="age">
-            <option value="minorenne" id="minorenne">minorenne</option>
-            <option value="maggiorenne" id="maggiorenne">maggiorenne</option>
-            <option value="over65" id="over65">over 65</option>
-        </select>
+            </form>
+    
+            <button type="submit" id="leggi">Genera</button>
+            <button type="reset">Annulla</button>
+        </div>
 
-        <button id="leggi">Lettura</button>
+        <h1 class="text-white">IL TUO BIGLIETTO</h1>
+
+        <div class="container">
+            <h2>DETTAGLIO PASSEGGERI</h2>
+            <div>
+                <div>
+                    <h2>NOME PASSEGGERO</h2>
+                    <p>nome</p>
+                </div>
+            </div>
+
+        </div>
 
 
 
