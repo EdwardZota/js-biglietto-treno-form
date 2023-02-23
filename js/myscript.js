@@ -1,6 +1,6 @@
 const myName = document.getElementById('name_surname');
 
-const km = document.getElementById('km');
+const km = document.getElementById("km");
 
 const domButton = document.querySelector('#leggi');
 
@@ -8,7 +8,6 @@ const age = document.querySelector('#age');
 
 const priceKm = 0.21 ;
 
-let totalPrice;
 
 
 domButton.addEventListener('click',
@@ -22,8 +21,17 @@ domButton.addEventListener('click',
         console.log(kmMessage);
 
         console.log(age.value);
-        
-        let totalPrice = kmDom * priceKm;
+
+        const totalPrice = priceKm * km.value;
+
+        if (document.getElementById('age').value == "minorenne") {
+            totalPrice -= totalPrice / 100 * 20;
+        }else if (document.getElementById('age').value == "over65") {
+            totalPrice = totalPrice - (totalPrice * 0.4);
+        }
+
+
+
         console.log(totalPrice);
 
     }
