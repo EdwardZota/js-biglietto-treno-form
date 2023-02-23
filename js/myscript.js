@@ -58,7 +58,7 @@ domButton.addEventListener('click',
             typeTicket.innerHTML = 'Biglietto con sconto anziani';
         }
 
-        priceTicket.innerHTML = totalPrice.toFixed(2);
+        priceTicket.innerHTML = totalPrice.toFixed(2) + '€';
 
         d_none_title.classList.remove('d-none');
         d_none_title.classList.add('d-block');
