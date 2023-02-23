@@ -13,6 +13,13 @@
     color:white;
 }
 
+.d-none,.d-none-title{
+    display: none;
+}
+
+.d-block{
+    display: block;
+}
 
 body{
     background-color: var(--main-color);
@@ -57,7 +64,7 @@ form div{
 
 }
 
-label,input,select,button{
+label,input,select,button,#left-side span{
     font-size: 20px;
     font-weight: bold;
 }
@@ -78,6 +85,9 @@ button{
     border-radius: 5px;
     margin: 10px;
     padding: 5px;
+}
+button:hover{
+    border: 1px solid orange;
 }
 
 #little-container{
