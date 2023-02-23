@@ -59,7 +59,6 @@ domButton.addEventListener('click',
         }
 
         priceTicket.innerHTML = totalPrice.toFixed(2);
-        console.log(totalPrice);
 
         d_none_title.classList.remove('d-none');
         d_none_title.classList.add('d-block');
